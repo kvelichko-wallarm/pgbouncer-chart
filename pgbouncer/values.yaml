@@ -13,9 +13,6 @@ image:
   tag: 1.0.0
   pullPolicy: Always
 
-nameOverride: ""
-fullnameOverride: ""
-
 ## pgbouncer service configuration
 ##
 service:
@@ -59,11 +56,11 @@ config:
    # <DB_NAME>:
    #  host: <DB_HOST>
    #  port: <DB_PORT>
-  pgbouncer: 
-    auth_type: md5
-    pool_mode: transaction
-    max_client_conn: 1024
-    default_pool_size: 20
+  pgbouncer: {}
+#    auth_type: md5
+#    pool_mode: transaction
+#    max_client_conn: 1024
+#    default_pool_size: 20
   userlist: {}
    # <USERNAME>: <PASSWORD> 
 
